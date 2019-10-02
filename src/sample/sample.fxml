@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="148.0" layoutY="42.0" text="BMI Calculator" textAlignment="CENTER" textFill="#121ccc" underline="true">
+               <font>
+                  <Font name="Serif Bold" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="theight" layoutX="157.0" layoutY="117.0" promptText="Enter height in metre" />
+            <TextField fx:id="tweight" layoutX="157.0" layoutY="167.0" promptText="Enter weight in kg" />
+            <Button layoutX="386.0" layoutY="235.0" mnemonicParsing="false" onAction="#buttonclicked" text="BMI" />
+            <Label fx:id="lbmi" layoutX="28.0" layoutY="301.0" prefHeight="55.0" prefWidth="445.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lresult" layoutX="28.0" layoutY="381.0" prefHeight="47.0" prefWidth="445.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
