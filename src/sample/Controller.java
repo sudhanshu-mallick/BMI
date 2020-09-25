@@ -14,30 +14,30 @@ public class Controller {
     public void buttonclicked()
     {
 
-        double height;
-        double weight;
-        double bmi;
+        double height1;
+        double weight1;
+        double bmi1;
 
         String result="";
 
-        height= Double.parseDouble(theight.getText());
-        weight= Double.parseDouble(tweight.getText());
+        height1= Double.parseDouble(theight.getText());
+        weight1= Double.parseDouble(tweight.getText());
 
-        bmi= height*height;
-        bmi= weight/bmi;
+        bmi1= height1*height1;
+        bmi1= weight1/bmi1;
 
-        lbmi.setText("BMI IS: "+bmi);
+        lbmi.setText("BMI IS: "+bmi1);
 
-        if(bmi<18.5){
+        if(bmi1<18.5){
 
             result="Under weight";
 
         }
-        else if(bmi>18.5 && bmi<25){
+        else if(bmi1>18.5 && bmi1<25){
 
             result="Normal";
         }
-        else if(bmi>25){
+        else if(bmi1>25){
 
             result="Over Weight";
 
